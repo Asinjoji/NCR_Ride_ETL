@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+# auto-generated duplicate of the raw file (the original CSV is committed)
+raw_data/*_raw_copy.csv
+
+raw_data/*.csv
