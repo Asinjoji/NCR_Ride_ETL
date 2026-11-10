@@ -7,3 +7,4 @@ venv/
 raw_data/*_raw_copy.csv
 
 raw_data/*.csv
+output/*.csv
