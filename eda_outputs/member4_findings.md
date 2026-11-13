@@ -64,7 +64,7 @@
 | Mehrauli | 904 | 567 | 222 | 62.72 | 24.56 |
 | Pataudi Chowk | 901 | 551 | 214 | 61.15 | 23.75 |
 
-- Ten quietest pickup locations: Ghitorni Village, Ashok Vihar, Chirag Delhi, Laxmi Nagar, Bahadurgarh, Kalkaji, Mandi House, Noida Sector 18, Dilshad Garden, Old Gurgaon.
+- Ten quietest pickup locations: Ghitorni Village, Chirag Delhi, Ashok Vihar, Laxmi Nagar, Bahadurgarh, Kalkaji, Mandi House, Noida Sector 18, Dilshad Garden, Old Gurgaon.
 
 ![Top routes](figures/m4_top_routes.png)
 

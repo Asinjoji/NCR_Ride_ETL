@@ -5,7 +5,6 @@
 
 - Cleaned dataset: 148,767 rows x 30 columns.
 - Raw file: 150,000 rows, so the pipeline removed 1,233 rows.
-- Columns this EDA could not find: value
 - Completed rides: 92,248 (62.0% of all bookings).
 
 | column | type | blanks | zeros | distinct |
@@ -59,9 +58,9 @@
 
 | column | outliers | lower limit | upper limit |
 |---|---|---|---|
-| Fare | 0 | nan | nan |
+| Fare | 3,125 | -447.00 | 1,369.00 |
 | Distance | 0 | -21.68 | 73.73 |
-| Price per km | 0 | nan | nan |
+| Price per km | 9,147 | -30.92 | 75.48 |
 
 
 ![Box plots](figures/m1_boxplots.png)
@@ -72,18 +71,18 @@
 
 ![Correlation heatmap](figures/m1_correlation.png)
 
-- Correlation between fare and distance: nan.
+- Correlation between fare and distance: 0.01.
 
 ## 6. Summary statistics (completed rides)
 
 
 | index | count | mean | std | min | 25% | 50% | 75% | max |
 |---|---|---|---|---|---|---|---|---|
-| x_value | 0.00 | nan | nan | nan | nan | nan | nan | nan |
+| x_value | 92,248.00 | 508.19 | 396.26 | 50.00 | 234.00 | 414.00 | 688.00 | 4,277.00 |
 | x_distance | 92,248.00 | 26.00 | 13.82 | 2.00 | 14.10 | 26.03 | 37.95 | 50.00 |
 | x_vtat | 92,248.00 | 8.51 | 3.75 | 2.00 | 5.30 | 8.50 | 11.80 | 15.00 |
 | x_ctat | 92,248.00 | 30.03 | 8.65 | 15.00 | 22.60 | 30.00 | 37.50 | 45.00 |
 | x_driver_rating | 92,248.00 | 4.23 | 0.44 | 3.00 | 4.10 | 4.30 | 4.60 | 5.00 |
 | x_customer_rating | 92,248.00 | 4.40 | 0.44 | 3.00 | 4.20 | 4.50 | 4.80 | 5.00 |
-| x_price_per_km | 0.00 | nan | nan | nan | nan | nan | nan | nan |
+| x_price_per_km | 92,248.00 | 33.85 | 54.12 | 1.01 | 8.98 | 17.70 | 35.58 | 1,666.99 |
 

@@ -42,7 +42,8 @@ ALIASES = {
     "booking_id": ["booking_id"],
     "reason": ["cancellation_reason", "cancel_reason",
                "reason_for_cancellation", "reason"],
-    "value": ["booking_value", "fare", "fare_amount", "booking_amount"],
+    "value": ["booking_value", "booking_value_inr", "fare", "fare_amount",
+              "booking_amount"],
     "distance": ["ride_distance_km", "ride_distance", "distance_km",
                  "distance"],
     "vtat": ["avg_vtat_min", "avg_vtat", "vtat"],
@@ -72,6 +73,10 @@ def find(df, key):
     if key == "reason":
         for low, col in lower.items():
             if "reason" in low and "incomplete" not in low:
+                return col
+    if key == "value":
+        for low, col in lower.items():
+            if low.startswith(("booking_value", "fare_amount", "fare_inr")):
                 return col
     return None
 
