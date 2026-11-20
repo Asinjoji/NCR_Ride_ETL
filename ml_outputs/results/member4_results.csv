@@ -1,0 +1,5 @@
+member,algorithm,task,train_rows,test_rows,seconds,note,accuracy,precision,recall,f1,roc_auc,mae,rmse,r2
+4,Decision Tree,classification,82120,20530,0.3,max_depth=5,0.9296,0.9045,0.3413,0.4956,0.7444,,,
+4,Decision Tree,regression,73798,18450,0.2,max_depth=3,,,,,,278.0672,388.3112,0.0545
+4,Random Forest,classification,82120,20530,1.7,"100 trees, max_depth=12",0.9012,0.5174,0.3707,0.4319,0.7457,,,
+4,Random Forest,regression,73798,18450,2.9,"100 trees, max_depth=12",,,,,,278.5972,388.9232,0.0515
